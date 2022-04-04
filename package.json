@@ -8,6 +8,7 @@
     "@strapi/strapi": "4.0.5",
     "immer": "9.0.6",
     "koa": "2.13.1",
+    "lodash": "^4.17.21",
     "lodash.set": "^4.3.2",
     "mime-types": "^2.1.27",
     "mysql": "^2.18.1",
