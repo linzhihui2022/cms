@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "@babel/core": "7",
+    "@babel/runtime": "^7.17.8",
     "@strapi/plugin-graphql": "^4.0.0",
     "@strapi/plugin-i18n": "4.0.5",
     "@strapi/plugin-users-permissions": "4.0.5",
@@ -43,7 +44,6 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "@types/express": "^4.17.13",
-    "regenerator": "link:@babel/runtime/regenerator"
+    "@types/express": "^4.17.13"
   }
 }
