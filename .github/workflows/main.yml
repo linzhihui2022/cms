@@ -25,12 +25,12 @@ jobs:
       - name: node
         uses: actions/setup-node@v3.1.0
         
-      - name: SSH Command
-        uses: D3rHase/ssh-command-action@v0.2
+      - name: SSH Action
+        uses: invi5H/ssh-action@v1.0.0
         with:
-          HOST: ${{secrets.SERVER_HOST}} 
-          USER: ${{secrets.SERVER_USER}}
-          PRIVATE_SSH_KEY: ${{ secrets.PRIVATE_KEY}}
+          SSH_HOST: ${{secrets.SERVER_HOST}} 
+          SSH_USER: ${{secrets.SERVER_USER}}
+          SSH_KEY: ${{ secrets.PRIVATE_KEY}}
           COMMAND: |
             "cd /root/"
             "touch a"
