@@ -28,12 +28,8 @@ jobs:
         uses: actions/setup-node@v3.1.0
         with: 
           node-version: "14"
-      - name: install pnpm
-        uses: pnpm/action-setup@v2.2.1
-        with:
-          version: "6.28.0"
       - name: install deps
-        run: pnpm install
+        run: npm install
       - name: env
         run:
           export ECRET=${{secrets.ECRET}}
@@ -45,7 +41,7 @@ jobs:
           export DATABASE_PASSWORD=${{secrets.DATABASE_PASSWORD}}
           export JWT_SECRET=${{secrets.JWT_SECRET}}
       - name: build
-        run: pnpm build
+        run: npm run build
       - name: deploy
         uses: appleboy/scp-action@master
         with: 
