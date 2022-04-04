@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "nav_links",
+  "info": {
+    "singularName": "nav-link",
+    "pluralName": "nav-links",
+    "displayName": "nav-link",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "text"
+    },
+    "nav_groups": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::nav-group.nav-group",
+      "inversedBy": "nav_links"
+    },
+    "order": {
+      "type": "integer"
+    },
+    "authors": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::author.author",
+      "inversedBy": "nav_links"
+    }
+  }
+}

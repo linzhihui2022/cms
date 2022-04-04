@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "nav_groups",
+  "info": {
+    "singularName": "nav-group",
+    "pluralName": "nav-groups",
+    "displayName": "nav-group",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "order": {
+      "type": "integer"
+    },
+    "nav_links": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::nav-link.nav-link",
+      "mappedBy": "nav_groups"
+    },
+    "disabled": {
+      "type": "boolean"
+    },
+    "authors": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::author.author",
+      "inversedBy": "nav_groups"
+    }
+  }
+}
