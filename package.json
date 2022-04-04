@@ -1,13 +1,23 @@
 {
   "dependencies": {
+    "@babel/core": "7",
     "@strapi/plugin-graphql": "^4.0.0",
     "@strapi/plugin-i18n": "4.0.5",
     "@strapi/plugin-users-permissions": "4.0.5",
     "@strapi/strapi": "4.0.5",
+    "immer": "9.0.6",
+    "koa": "2.13.1",
     "lodash.set": "^4.3.2",
     "mime-types": "^2.1.27",
     "mysql": "^2.18.1",
-    "sqlite3": "5.0.2"
+    "qs": "6.10.1",
+    "react": "16.8.0",
+    "react-dom": "16.8.0",
+    "react-is": "16.8.0",
+    "react-select": "4.0.2",
+    "redux": "4",
+    "sqlite3": "5.0.2",
+    "webpack": "5"
   },
   "name": "backend",
   "private": true,
@@ -33,6 +43,7 @@
   },
   "license": "MIT",
   "devDependencies": {
+    "@types/express": "^4.17.13",
     "regenerator": "link:@babel/runtime/regenerator"
   }
 }
