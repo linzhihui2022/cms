@@ -30,6 +30,8 @@ jobs:
           node-version: "14"
       - name: install pnpm
         uses: pnpm/action-setup@v2.2.1
+        with:
+          version: "6.28.0"
       - name: install deps
         run: pnpm install
       - name: env
