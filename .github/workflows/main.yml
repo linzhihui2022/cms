@@ -22,14 +22,23 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - name: update
-      - uses: tzzs/server-shell@v3
+      - name: SSH Command
+  # You may pin to the exact commit or the version.
+  # uses: D3rHase/ssh-command-action@3d8a11a6823dfe94f4fae068e6fc8b8f3d038c62
+        uses: D3rHase/ssh-command-action@v0.2
         with:
-          PRIVATE_KEY: ${{ secrets.PRIVATE_KEY}}
-          USERNAME: ${{secrets.SERVER_USER}}
-          IP: ${{secrets.SERVER_HOST}}
-          SHELL: |
+    # hostname / IP of the server
+          HOST: ${{secrets.SERVER_HOST}} 
+    # ssh port of the server
+
+    # user of the server
+          USER: ${{secrets.SERVER_USER}}
+    # private ssh key registered on the server
+          PRIVATE_SSH_KEY: ${{ secrets.PRIVATE_KEY}}
+    # command to be executed
+          COMMAND: |
             "cd /root/"
             "touch a"
+        
         
 
