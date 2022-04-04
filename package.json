@@ -2,6 +2,7 @@
   "dependencies": {
     "@babel/core": "7",
     "@babel/runtime": "^7.17.8",
+    "@strapi/design-system": "^0.0.1-alpha.79",
     "@strapi/plugin-graphql": "^4.0.0",
     "@strapi/plugin-i18n": "4.0.5",
     "@strapi/plugin-users-permissions": "4.0.5",
