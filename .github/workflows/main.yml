@@ -45,7 +45,7 @@ jobs:
           echo "ADMIN_JWT_SECRET=${{secrets.ADMIN_JWT_SECRET}}" >> .env
 
       - name: build
-        run: yarn build
+        run: NODE_ENV=production yarn build
 
       - name: SSH Action
         uses: appleboy/ssh-action@v0.1.4
