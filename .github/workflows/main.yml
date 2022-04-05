@@ -24,8 +24,17 @@ jobs:
     steps:
       - name: node
         uses: actions/setup-node@v3.1.0
+        with:
+          node-version: "14"
+        
+      - name: Yarn Setup
+        uses: DerYeger/yarn-setup-action@v1.0.1
+        with:
+          node-version: "14"
+          
       - name: yarn install
         run: yarn install
+        
       - name: env
         run: |
           echo "DATABASE_HOST=${{secrets.DATABASE_HOST}}" >> .env
