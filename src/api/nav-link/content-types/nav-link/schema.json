@@ -34,7 +34,7 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::author.author",
-      "inversedBy": "nav_links"
+      "mappedBy": "nav_links"
     }
   }
 }

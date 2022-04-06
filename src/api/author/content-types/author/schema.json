@@ -33,6 +33,18 @@
       "relation": "manyToMany",
       "target": "api::nav-link.nav-link",
       "inversedBy": "authors"
+    },
+    "name": {
+      "type": "string"
+    },
+    "avatar": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }
